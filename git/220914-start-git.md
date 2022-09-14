@@ -1,3 +1,11 @@
+##제목
 
-<h3>오늘 한 일</h3>
-<p>7개월동안 여정 중 첫날이다. git을 처음 배우기 시작했고 커밋하는법도 배웠다.</p> 
+<h1>This is Heading level 1</h1>
+<h2>This is Heading level 2</h2>
+<ul>
+ <li>First item</li>
+ <li>Second item</li>
+  <ul>
+   <li>Indented item<li>
+  </ul>
+ </ul>
