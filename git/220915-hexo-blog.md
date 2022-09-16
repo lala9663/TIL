@@ -10,12 +10,14 @@
     ls를 해보면 여러가지가 나오는데 package.json 이건 Node.js라는 언어를 가지고 움직이기 때문에 중요한 역할을 한다.<br>
     그리고 _config.yml은 블로그의 환경을 설정하는 곳이다. 
  6. npm install (빠진 패키지 설치)
- 7. hexo new post "{글의제목}"
- 8. vi source/_posts/My-first-post.md
+ 7. hexo new post "{글의제목 영어로 }"
+ 8. vi source/_posts/My-first-post.md<br>
     title, date, tags 선 아래부터 글 작성
- 9. hexo generate
+ 9. hexo generate <br>
+    1세대 static이기 때문에 한개의 컨텐츠를 만들기 위해선 하나의 페이지 가 필요하다. 그걸 끼워맞추는 행동이 generate이다. 
  10. hexo server<br>
   **블로그 첫 포스팅 완료**
+ 11. hexo deploy (push와 같은 개념)  
  
  
  ## 다른 사람들도 이 블로그를 볼 수 있게 하는 법
@@ -30,3 +32,4 @@
   2. title, author 설정하기 language는 테마에 지원안하는 언어가 있기때문에 확인하고 바꾸기
   3. url 설정하기 **https:// 내주소** 여기서 https로 해야 하는 것 주의하기
   4. 아래에 있는 theme 원하는 테마에 맞춰 변경
+  5. hexo clean && generate 
