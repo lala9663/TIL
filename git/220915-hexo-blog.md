@@ -11,7 +11,7 @@
     그리고 _config.yml은 블로그의 환경을 설정하는 곳이다. 
  6. npm install (빠진 패키지 설치)
  7. hexo new post "{글의제목 영어로 }"
- 8. vi source/_posts/My-first-post.md<br>
+ 8. vi source/_posts/"{제목}"<br>
     title, date, tags 선 아래부터 글 작성
  9. hexo generate <br>
     1세대 static이기 때문에 한개의 컨텐츠를 만들기 위해선 하나의 페이지 가 필요하다. 그걸 끼워맞추는 행동이 generate이다. 
