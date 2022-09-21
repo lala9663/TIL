@@ -1,4 +1,4 @@
-package me.java.input;
+package me.java.online;
 
 import java.util.Scanner;
 

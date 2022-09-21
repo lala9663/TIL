@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="456b0a65-ddcd-4087-8056-1837658ed809" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/java/overeview/delete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/java/overeview/practice1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/java/overeview/practice2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/java/overeview/practice3.java" afterDir="false" />
+    <list default="true" id="456b0a65-ddcd-4087-8056-1837658ed809" name="Changes" comment="220920">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/java/online/day03/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/java/online/day03/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/java/online/day03/PersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/java/online/day03/Practice_220921.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/java/online/day03/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/java/online/day03/StudentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/java/online/day03/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/java/online/day03/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/java/online/day03/UserInfoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/java/online/day03/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/java/overeview/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/java/datatype/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/java/input/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/java/online/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/java/realpractice/day02/practice7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/java/realpractice/day02/practice7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,12 +30,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/me/java/overeview/ifpractice.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,14 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/campus_kty/HelloWorld",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,7 +79,35 @@
       <option name="project" value="LOCAL" />
       <updated>1663589144707</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="homework">
+      <created>1663643717253</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663643717253</updated>
+    </task>
+    <task id="LOCAL-00003" summary="220920">
+      <created>1663663175366</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663663175367</updated>
+    </task>
+    <task id="LOCAL-00004" summary="220920">
+      <created>1663678397492</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663678397492</updated>
+    </task>
+    <task id="LOCAL-00005" summary="220920">
+      <created>1663733825274</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663733825274</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,7 +123,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="homework" />
+    <MESSAGE value="220920" />
+    <option name="LAST_COMMIT_MESSAGE" value="220920" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
