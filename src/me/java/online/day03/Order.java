@@ -2,7 +2,7 @@ package me.java.online.day03;
 
 public class Order {
 
-    public int orderNum;
+    public long orderNum;
     public int phoneNum;
     public String addr;
     public String date;
@@ -13,7 +13,7 @@ public class Order {
     public Order() {
     }
 
-    public Order(int orderNum, int phoneNum, String addr, String date, String time, int price, int menuNum) {
+    public Order(long orderNum, int phoneNum, String addr, String date, String time, int price, int menuNum) {
         this.orderNum = orderNum;
         this.phoneNum = phoneNum;
         this.addr = addr;
@@ -22,6 +22,8 @@ public class Order {
         this.price = price;
         this.menuNum = menuNum;
     }
+
+    public void setOrderNum(long orderNum1) {orderNum = orderNum1;}
 
     public String showOrder() {
         return "주문 접수 번호 : " + orderNum + "\n 주문 핸드폰 번호 : " + phoneNum +
