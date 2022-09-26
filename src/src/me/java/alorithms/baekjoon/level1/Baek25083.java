@@ -1,4 +1,4 @@
-package me.java.alorithms.baekjoon;
+package me.java.alorithms.baekjoon.level1;
 
 public class Baek25083 {
     public static void main(String[] args) {

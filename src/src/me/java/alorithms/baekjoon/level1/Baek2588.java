@@ -1,4 +1,4 @@
-package me.java.alorithms.baekjoon;
+package me.java.alorithms.baekjoon.level1;
 
 import java.util.Scanner;
 
