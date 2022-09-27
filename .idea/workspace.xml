@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="456b0a65-ddcd-4087-8056-1837658ed809" name="Changes" comment="feat: review">
-      <change afterPath="$PROJECT_DIR$/src/me/java/online/ch20/CharArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/java/online/ch21/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/java/online/ch21/BookTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/java/online/ch22/TwoDimensionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/java/online/review/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/java/online/review/CarFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/java/online/review/CarFactoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/java/online/ch16/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/java/online/ch16/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/java/online/ch16/EmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/java/online/ch16/EmployeeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,18 +36,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/campus_kty/HelloWorld",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.language"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/campus_kty/KDT3_Java_Assignment2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.TwoDimensionTest">
     <configuration name="Car" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.java.online.review.Car" />
@@ -199,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664114138898</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: review">
+      <created>1664196886561</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664196886561</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: review">
+      <created>1664282442639</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664282442639</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
