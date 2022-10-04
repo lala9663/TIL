@@ -1,4 +1,4 @@
-package campus.day06;
+package campus.assignment4;
 
 
 import java.util.Arrays;
