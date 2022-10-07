@@ -7,16 +7,11 @@ import java.util.Objects;
 public class Electronic {
     private String productNo;
     private String modelName;
-    enum CompanyName{
-        SAMSUNG, LG, APPLE;
-    }
+
     private CompanyName companyName;
 
     private String dateOfMade;
 
-    enum AuthMethod{
-        HAND, PATTERN, PIN, FACE;
-    }
     private AuthMethod[] authMethod;
     public Electronic(String productNo, String modelName, CompanyName companyName, String dateOfMade, AuthMethod[] authMethod) {
         this.productNo = productNo;
@@ -89,6 +84,7 @@ public class Electronic {
                 ", authMethod=" + Arrays.toString(authMethod) +
                 '}';
     }
+
 
 
 }
