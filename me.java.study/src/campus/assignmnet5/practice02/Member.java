@@ -3,27 +3,40 @@ package campus.assignmnet5.practice02;
 import java.util.Objects;
 
 public class Member {
-     int serialNo;
-    String memberID;
-     String memberPassword;
-    int memberPhoneNumber;
-     String memberEmail;
-    String memberBirthDate;
+    private String serialNo;
+    protected String memberID;
+    protected String memberPw;
+    protected String phoneNum;
+    protected String memberEmail;
+    protected String memberBrithDate;
+    private static int count = 0;
+    private static final int MAX_MEMBER = 10000;
 
-    public Member(int serialNo, String memberID, String memberPassword, int memberPhoneNumber, String memberEmail, String memberBirthDate) {
-        this.serialNo = serialNo;
-        this.memberID = memberID;
-        this.memberPassword = memberPassword;
-        this.memberPhoneNumber = memberPhoneNumber;
-        this.memberEmail = memberEmail;
-        this.memberBirthDate = memberBirthDate;
+    public Member() {
+    generateKey();
     }
 
-    public int getSerialNo() {
+    public Member(String memberID, String memberPw, String phoneNum, String memberEmail, String memberBrithDate) {
+        this.memberID = memberID;
+        this.memberPw = memberPw;
+        this.phoneNum = phoneNum;
+        this.memberEmail = memberEmail;
+        this.memberBrithDate = memberBrithDate;
+        generateKey();
+    }
+
+    public void generateKey(){
+        if(count < MAX_MEMBER) {
+            count++;
+        }
+        serialNo = String.format("%05d", count);
+    }
+
+    public String getSerialNo() {
         return serialNo;
     }
 
-    public void setSerialNo(int serialNo) {
+   private void setSerialNo(String serialNo) {
         this.serialNo = serialNo;
     }
 
@@ -35,20 +48,20 @@ public class Member {
         this.memberID = memberID;
     }
 
-    public String getMemberPassword() {
-        return memberPassword;
+    public String getMemberPw() {
+        return memberPw;
     }
 
-    public void setMemberPassword(String memberPassword) {
-        this.memberPassword = memberPassword;
+    public void setMemberPw(String memberPw) {
+        this.memberPw = memberPw;
     }
 
-    public int getMemberPhoneNumber() {
-        return memberPhoneNumber;
+    public String getPhoneNum() {
+        return phoneNum;
     }
 
-    public void setMemberPhoneNumber(int memberPhoneNumber) {
-        this.memberPhoneNumber = memberPhoneNumber;
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
     }
 
     public String getMemberEmail() {
@@ -59,12 +72,12 @@ public class Member {
         this.memberEmail = memberEmail;
     }
 
-    public String getMemberBirthDate() {
-        return memberBirthDate;
+    public String getMemberBrithDate() {
+        return memberBrithDate;
     }
 
-    public void setMemberBirthDate(String memberBirthDate) {
-        this.memberBirthDate = memberBirthDate;
+    public void setMemberBrithDate(String memberBrithDate) {
+        this.memberBrithDate = memberBrithDate;
     }
 
     @Override
@@ -72,27 +85,23 @@ public class Member {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Member member = (Member) o;
-        return serialNo == member.serialNo && memberPhoneNumber == member.memberPhoneNumber && memberID.equals(member.memberID)
-                && memberPassword.equals(member.memberPassword) && memberEmail.equals(member.memberEmail) && memberBirthDate.equals(member.memberBirthDate);
+        return serialNo.equals(member.serialNo) && memberID.equals(member.memberID) && memberPw.equals(member.memberPw) && phoneNum.equals(member.phoneNum) && memberEmail.equals(member.memberEmail) && memberBrithDate.equals(member.memberBrithDate);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(serialNo, memberID, memberPassword, memberPhoneNumber, memberEmail, memberBirthDate);
+        return Objects.hash(serialNo, memberID, memberPw, phoneNum, memberEmail, memberBrithDate);
     }
 
     @Override
     public String toString() {
         return "Member{" +
-                "serialNo=" + serialNo +
+                "serialNo='" + serialNo + '\'' +
                 ", memberID='" + memberID + '\'' +
-                ", memberPassword='" + memberPassword + '\'' +
-                ", memberPhoneNumber=" + memberPhoneNumber +
+                ", memberPw='" + memberPw + '\'' +
+                ", phoneNum='" + phoneNum + '\'' +
                 ", memberEmail='" + memberEmail + '\'' +
-                ", memberBirthDate='" + memberBirthDate + '\'' +
+                ", memberBrithDate='" + memberBrithDate + '\'' +
                 '}';
     }
-
-
 }
-

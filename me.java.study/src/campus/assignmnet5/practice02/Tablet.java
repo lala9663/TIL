@@ -1,19 +1,28 @@
 package campus.assignmnet5.practice02;
 
+import java.util.Date;
 import java.util.Objects;
 
-public class Tablet {
-   private String hasPencil="";
+public class Tablet extends Electronic {
+    protected boolean hasPencil;
 
-    public Tablet(String hasPencil) {
+    public Tablet() {
+    }
+
+    public Tablet(boolean hasPencil) {
         this.hasPencil = hasPencil;
     }
 
-    public String getHasPencil() {
+    public boolean isHasPencil() {
         return hasPencil;
     }
 
-    public void setHasPencil(String hasPencil) {
+    public void setHasPencil(boolean hasPencil) {
+        this.hasPencil = hasPencil;
+    }
+
+    public Tablet(String modelName, Date dateOfMade, Company companyName, AuthMethod[] authMethod, boolean hasPencil) {
+        super(modelName,  companyName,dateOfMade, authMethod);
         this.hasPencil = hasPencil;
     }
 
@@ -22,7 +31,7 @@ public class Tablet {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Tablet tablet = (Tablet) o;
-        return Objects.equals(hasPencil, tablet.hasPencil);
+        return hasPencil == tablet.hasPencil;
     }
 
     @Override
@@ -33,7 +42,7 @@ public class Tablet {
     @Override
     public String toString() {
         return "Tablet{" +
-                "hasPencil='" + hasPencil + '\'' +
+                "hasPencil=" + hasPencil +
                 '}';
     }
 }

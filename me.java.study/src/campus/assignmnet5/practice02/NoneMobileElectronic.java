@@ -1,11 +1,20 @@
 package campus.assignmnet5.practice02;
 
+import java.util.Date;
 import java.util.Objects;
 
-public class NoneMobileElectronic {
-    private String address = "";
+public class NoneMobileElectronic extends Electronic{
+    protected String address;
+
+    public NoneMobileElectronic() {
+    }
 
     public NoneMobileElectronic(String address) {
+        this.address = address;
+    }
+
+    public NoneMobileElectronic(String modelName, Date dateOfMade, Company companyName, AuthMethod[] authMethod, String address) {
+        super(modelName, companyName, dateOfMade,authMethod);
         this.address = address;
     }
 
@@ -22,7 +31,7 @@ public class NoneMobileElectronic {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         NoneMobileElectronic that = (NoneMobileElectronic) o;
-        return Objects.equals(address, that.address);
+        return address.equals(that.address);
     }
 
     @Override

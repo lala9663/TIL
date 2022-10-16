@@ -1,10 +1,62 @@
 package campus.assignmnet5.practice02;
 
+
 import java.util.Arrays;
 
 public class Electronics {
 
-    private Electronic[] electronics;
+    protected Electronic[] electronics;
+    private static final int DEFAULT_SIZE = 10;
+
+    public Electronics() {
+        electronics = new Electronic[DEFAULT_SIZE];
+    }
+
+    public Electronics(int size) {
+        electronics = new Electronic[size];
+    }
+
+    public Electronics(Electronic[] electronics) {
+        this.electronics = electronics;
+    }
+
+    public Electronic get(int i) {
+        return electronics[i];
+    }
+
+    public Electronic find(String key) {
+        for (int i = 0; i < electronics.length; i++) {
+            if (electronics[i] != null) {
+                if (electronics[i].getProductNo() != null) {
+                    if (electronics[i].getProductNo().equals(key)) {
+                        return electronics[i];
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    public Electronic[] getElectronics() {
+        return electronics;
+    }
+
+    public void setElectronics(Electronic[] electronics) {
+        this.electronics = electronics;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Electronics that = (Electronics) o;
+        return Arrays.equals(electronics, that.electronics);
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(electronics);
+    }
 
     @Override
     public String toString() {
@@ -12,20 +64,4 @@ public class Electronics {
                 "electronics=" + Arrays.toString(electronics) +
                 '}';
     }
-
-    public Electronics(Electronic[] electronics) {
-        this.electronics = electronics;
-    }
-
-
-    public Electronic findByProductNo(String string){
-        for (int i = 0; i <this.electronics.length ; i++) {
-            if (electronics[i].getProductNo().equals(string)){
-                return  electronics[i];
-            }
-        }
-        return null;
-    }
-
-
 }

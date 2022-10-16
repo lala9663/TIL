@@ -2,28 +2,34 @@ package campus.assignmnet5.practice02;
 
 import java.util.Objects;
 
-public class MobileElectronic {
-    private String communicationMethod="";
-    private int weight = 0;
+public class MobileElectronic extends Electronic {
+    enum CommunicationMethod{
+        FIVE_G, FOUR_G, THREE_G
+    }
+    protected CommunicationMethod communicationMethod;
+    protected String weight;
 
-    public MobileElectronic(String communicationMethod, int weight) {
+    public MobileElectronic() {
+    }
+
+    public MobileElectronic(CommunicationMethod communicationMethod, String weight) {
         this.communicationMethod = communicationMethod;
         this.weight = weight;
     }
 
-    public String getCommunicationMethod() {
+    public CommunicationMethod getCommunicationMethod() {
         return communicationMethod;
     }
 
-    public void setCommunicationMethod(String communicationMethod) {
+    public void setCommunicationMethod(CommunicationMethod communicationMethod) {
         this.communicationMethod = communicationMethod;
     }
 
-    public int getWeight() {
+    public String getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(String weight) {
         this.weight = weight;
     }
 
@@ -32,7 +38,7 @@ public class MobileElectronic {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         MobileElectronic that = (MobileElectronic) o;
-        return weight == that.weight && Objects.equals(communicationMethod, that.communicationMethod);
+        return communicationMethod == that.communicationMethod && weight.equals(that.weight);
     }
 
     @Override
@@ -43,8 +49,8 @@ public class MobileElectronic {
     @Override
     public String toString() {
         return "MobileElectronic{" +
-                "communicationMethod='" + communicationMethod + '\'' +
-                ", weight=" + weight +
+                "communicationMethod=" + communicationMethod +
+                ", weight='" + weight + '\'' +
                 '}';
     }
 }

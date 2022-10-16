@@ -2,11 +2,20 @@ package campus.assignmnet5.practice02;
 
 import java.util.Objects;
 
-public class SmartPhone{
-    private int numOfCameras= 0;
-    private int numOfSensors = 0;
+public class SmartPhone extends MobileElectronic {
+    protected int numOfCameras;
+    protected int numOfSensors;
+
+    public SmartPhone() {
+    }
 
     public SmartPhone(int numOfCameras, int numOfSensors) {
+        this.numOfCameras = numOfCameras;
+        this.numOfSensors = numOfSensors;
+    }
+
+    public SmartPhone(CommunicationMethod communicationMethod, String weight, int numOfCameras, int numOfSensors) {
+        super(communicationMethod, weight);
         this.numOfCameras = numOfCameras;
         this.numOfSensors = numOfSensors;
     }
@@ -45,6 +54,8 @@ public class SmartPhone{
         return "SmartPhone{" +
                 "numOfCameras=" + numOfCameras +
                 ", numOfSensors=" + numOfSensors +
+                ", communicationMethod=" + communicationMethod +
+                ", weight='" + weight + '\'' +
                 '}';
     }
 }
