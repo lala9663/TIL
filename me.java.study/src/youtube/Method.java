@@ -1,4 +1,4 @@
-package youtube.ch06;
+package youtube;
 
 public class Method {
     // 메서드의 장점
