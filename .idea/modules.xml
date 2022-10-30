@@ -3,8 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/TIL.iml" filepath="$PROJECT_DIR$/.idea/TIL.iml" />
-      <module fileurl="file://$PROJECT_DIR$/me.java.algorithm/me.java.algorithm.iml" filepath="$PROJECT_DIR$/me.java.algorithm/me.java.algorithm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/me.java.etc/me.java.etc.iml" filepath="$PROJECT_DIR$/me.java.etc/me.java.etc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/me.java.command/me.java.etc.iml" filepath="$PROJECT_DIR$/me.java.command/me.java.etc.iml" />
       <module fileurl="file://$PROJECT_DIR$/me.java.study/me.java.study.iml" filepath="$PROJECT_DIR$/me.java.study/me.java.study.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/src.iml" filepath="$PROJECT_DIR$/src/src.iml" />
     </modules>
